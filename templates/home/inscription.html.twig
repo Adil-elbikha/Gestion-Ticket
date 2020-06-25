@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+{% block title %}Inscription{% endblock %}
+{% block body %}
+
+    <h1>S'inscrire</h1>
+    <div class="d-flex justify-content-center">
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+
+            {{ form_start(form) }}
+            <div class="alert-danger">
+                {{ form_errors(form)}}
+            </div>
+            {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.role, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.password, {'attr': {'class': 'form-control', 'type': 'password'}}) }}
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+
+            {{ form_end(form) }}
+
+            <!--
+            <form action="/inscription" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom </label>
+                    <input type="text" class="form-control" id="nom" name="nom" aria-describedby="emailHelp"
+                           placeholder="Entrer votre nom..." required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" aria-describedby="emailHelp"
+                           placeholder="Entrer votre prénom..." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse mail</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                           placeholder="Entrer l'adresse mail..." required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Type de compte</label>
+                    <select class="form-control" id="sel1">
+                        <option>Client</option>
+                        <option>Chef de Projet</option>
+                        <option>Technicien</option>
+                    </select>
+                </div>
+                <input type="hidden" name="_create" value="POST"/>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>-->
+        </div>
+    </div>
+
+{% endblock %}
