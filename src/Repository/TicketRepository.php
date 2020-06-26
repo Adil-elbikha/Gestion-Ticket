@@ -19,6 +19,14 @@ class TicketRepository extends ServiceEntityRepository
         parent::__construct($registry, Ticket::class);
     }
 
+    public function findClientTickets($value){
+        return $this->createQueryBuilder('t')
+            ->andWhere('t.demandeur = :email')
+            ->setParameter('email', $value->getUsername())
+            ->getQuery()
+            ->getResult();
+    }
+
     // /**
     //  * @return Ticket[] Returns an array of Ticket objects
     //  */
