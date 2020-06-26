@@ -1,33 +1,53 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ClientController!{% endblock %}
-
+{% block title %}Bienvenue{% endblock %}
 {% block body %}
-    <style>
-        .example-wrapper {
-            margin: 1em auto;
-            max-width: 800px;
-            width: 95%;
-            font: 18px/1.5 sans-serif;
-        }
 
-        .example-wrapper code {
-            background: #F5F5F5;
-            padding: 2px 6px;
-        }
-    </style>
+    {% if tickets is not defined %}
+        <div>
+            <h3>
+                Vous n'avez créé aucun ticket pour l'instant.
+            </h3>
+        </div>
+    {% else %}
+        <div class="d-flex justify-content-center table-responsive">
 
-    <div class="example-wrapper">
-        <h1>Hello {{ app.user.username }}! ✅</h1>
+        <div class="col-sm-12 col-md-10 pt-4">
+            <div class="container-fluid">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Statut</th>
+                        <th scope="col">Titre</th>
+                        <th scope="col">Technicien</th>
+                        <th scope="col">Demandeur</th>
+                        <th scope="col">Lieu</th>
+                        <th scope="col">Date d'échéance</th>
+                        <th scope="col">Priorité</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for ticket in tickets %}
+                        <tr>
+                            <td>{{ ticket.id }}</td>
+                            <td>{{ ticket.statut }}</td>
+                            <td>{{ ticket.titre }}</td>
+                            <td>{{ ticket.technicien }}</td>
+                            <td>{{ ticket.demandeur }}</td>
+                            <td>{{ ticket.lieu }}</td>
+                            <td>{{ ticket.dateEcheance|date("d/m/Y") }}</td>
+                            <td>{{ ticket.priorite }}</td>
+                        </tr>
+                    {% endfor %}
 
-        This friendly message is coming from:
-        <ul>
-            <li>Your controller at <code><a
-                            href="{{ 'C:/projects/SymfonyGestionTicket/src/Controller/ClientController.php'|file_link(0) }}">src/Controller/ClientController.php</a></code>
-            </li>
-            <li>Your template at <code><a
-                            href="{{ 'C:/projects/SymfonyGestionTicket/templates/client/index.html.twig'|file_link(0) }}">templates/client/index.html.twig</a></code>
-            </li>
-        </ul>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+
     </div>
+
 {% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ticket index{% endblock %}
+
+{% block body %}
+    <h1>Ticket index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Statut</th>
+                <th>Technicien</th>
+                <th>Demandeur</th>
+                <th>Lieu</th>
+                <th>Date_echeance</th>
+                <th>Priorite</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for ticket in tickets %}
+            <tr>
+                <td>{{ ticket.id }}</td>
+                <td>{{ ticket.titre }}</td>
+                <td>{{ ticket.statut }}</td>
+                <td>{{ ticket.technicien }}</td>
+                <td>{{ ticket.demandeur }}</td>
+                <td>{{ ticket.lieu }}</td>
+                <td>{{ ticket.dateEcheance ? ticket.dateEcheance|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ ticket.priorite }}</td>
+                <td>
+                    <a href="{{ path('ticket_show', {'id': ticket.id}) }}">show</a>
+                    <a href="{{ path('ticket_edit', {'id': ticket.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('ticket_new') }}">Create new</a>
+{% endblock %}

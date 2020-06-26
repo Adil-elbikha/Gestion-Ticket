@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer un ticket.{% endblock %}
+{% block body %}
+
+<h1>Créer un nouveau ticket</h1>
+
+{{ include('ticket/_form.html.twig') }}
+
+<a href="{{ path('home') }}">Retour à la liste</a>
+
+{% endblock %}

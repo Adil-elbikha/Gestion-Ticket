@@ -2,39 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f0bd516-b2f2-4105-a341-8e7aa172c906" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20200626005641.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ChefController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ClientController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/TechnicienController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/chef/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/client/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/technicien/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GestionTicket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GestionTicket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/client/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26f9985b-ba49-4240-b5f4-6a49c228447b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/26f9985b-ba49-4240-b5f4-6a49c228447b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7eba2544-f2fd-4465-91e8-e12931c93863.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7eba2544-f2fd-4465-91e8-e12931c93863/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a25f2d6c-4422-406a-9c89-8efd03fea352.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a25f2d6c-4422-406a-9c89-8efd03fea352.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ClientController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TicketRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/TicketRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/inscription.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/inscription.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chef/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chef/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/client/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/client/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +30,7 @@
       <server host="127.0.0.1" id="23055517-e517-484f-aa04-f92b9270d558" name="Unnamed" port="8000" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
@@ -188,7 +165,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="SymfonyGestionTicket" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/console" scriptParameters="server:start">
@@ -209,6 +186,7 @@
       <workItem from="1593103635802" duration="298000" />
       <workItem from="1593103982757" duration="9618000" />
       <workItem from="1593132636870" duration="12772000" />
+      <workItem from="1593194845281" duration="5970000" />
     </task>
     <servers />
   </component>
@@ -227,19 +205,28 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="544" y="198" key="#SymfonyGestionTicket/0.0.1680.1010/-1280.35.1280.984@0.0.1680.1010" timestamp="1593138935010" />
-    <state x="338" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593138980573">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593197962886">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593105429093" />
+    <state x="274" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1593197962886" />
     <state x="338" y="31" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1010/-1280.35.1280.984@0.0.1680.1010" timestamp="1593138980573" />
     <state x="416" y="158" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593108072110">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="416" y="158" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1593108072110" />
-    <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593145252289">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="487" y="32" key="#com.intellij.ide.util.MemberChooser" timestamp="1593200686647">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="487" y="32" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1593200686647" />
+    <state x="463" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593198210084">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593198210084" />
     <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1680.1010/-1280.35.1280.984@0.0.1680.1010" timestamp="1593145252289" />
+    <state x="492" y="138" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1593199961814">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="138" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.1366.728@0.0.1366.728" timestamp="1593199961814" />
     <state x="544" y="198" key="#console" timestamp="1593138797905">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -268,23 +255,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1593105107253" />
-    <state x="226" y="8" key="SettingsEditor" timestamp="1593138873978">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1593194818264">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593105158789" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593194818264" />
     <state x="226" y="8" key="SettingsEditor/0.0.1680.1010/-1280.35.1280.984@0.0.1680.1010" timestamp="1593138873978" />
     <state x="359" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1593103989505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="359" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593103989505" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1593128516206">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1593200666343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593128516206" />
-    <state x="426" y="68" width="827" height="941" key="search.everywhere.popup" timestamp="1593145375242">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593200666343" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1593200588821">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593113000374" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1593200588821" />
     <state x="426" y="68" width="827" height="941" key="search.everywhere.popup/0.0.1680.1010/-1280.35.1280.984@0.0.1680.1010" timestamp="1593145375242" />
   </component>
   <component name="XDebuggerManager">
